@@ -1,0 +1,778 @@
+body
+{
+	/*background-color: rgb(0, 0, 0);*/
+	background-color: rgb(0, 82, 138);
+	/*display: inline-block;*/
+	color: white;
+	
+}
+
+html, body{
+	height: 100%;
+}
+
+
+*{
+	margin: 0;
+}
+
+a:hover
+{
+	color:rgb(214, 242, 244);
+}
+
+.video-aps
+{
+	position: relative;
+	width: auto;
+	/*height: 100vh;*/
+	display: block;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+
+.video-container
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: -1;
+
+}
+
+.color-overlay
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: auto;
+	height: 100vh;
+	opacity: 0.5;
+	z-index: 3;
+
+}
+
+/*navbar home*/
+
+a:hover
+{
+	text-decoration: none;
+}
+
+.navbar-home
+{
+	text-align: center;
+	font-family: sans-serif;
+	font-size: 2em;
+	padding-bottom: 5%;
+	
+
+}
+
+.navbar-home a
+{
+	color: white;
+}
+
+.nav-aps
+{
+	background-color: rgba(0,0,0,0.3);
+}
+
+.navbar-home a:hover
+{
+	color: rgb(17,133,117);
+	text-decoration: none;
+	text-shadow: 1px 1px 2px black, 0 0 55px yellow, 0 0 25px rgb(17,133,117);
+
+
+
+}
+
+.aps
+{
+	text-align: center;
+	padding-top: : 25%;
+	-webkit-filter: drop-shadow(8px 8px 10px white);filter: drop-shadow(8px 8px 10px white);	
+}
+
+
+.drop
+{
+	-webkit-filter: drop-shadow(8px 8px 12px white);filter: drop-shadow(8px 8px 12px white);	
+}
+/*navbar pages*/
+
+.nav-tabs .nav-link
+{
+	color:white;
+}
+/*banner*/
+
+
+
+/*slogan*/
+
+.slogan
+{
+   /* top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);*/
+    color: white;
+    text-align: center;
+    font-size: 2.5em;
+    padding-top: 2%;
+}
+
+.slogan-img
+{
+	position: relative;
+	background-image: url('../images/site/backlinks.png');
+	display: block;
+	width: 100%;
+    height: auto;
+    background-attachment: fixed;
+    /*opacity: 0.9;*/
+    padding: 5%
+}
+
+/*header*/
+.header-aps
+{
+    background: url('../images/site/header_1_bis.jpg') no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+	min-height:300px;
+	width: 100%;
+}
+
+.header-aps h2
+{
+	text-align: center;
+    padding-top: 1.5em;
+    font-size: 50px;
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+}
+
+.aps-dot
+{
+	 background: url('../images/site/dott.png') repeat 0px 0px;
+    background-size: 2px;
+    -webkit-background-size: 2px;
+    -moz-background-size: 2px;
+    -o-background-size: 2px;
+    -ms-background-size: 2px;
+	min-height:300px;
+}
+
+/*Modal*/
+.modal-content
+{
+	background-color: rgba(255,255,255,0.7);
+}
+
+/*Links images*/
+
+.links-background
+{
+	
+	background-image: url('../images/site/splashing-275950_1920.jpg');
+	background-size: cover;
+	background-attachment: fixed;
+	display: block;
+	width: 100%;
+	height:auto;
+	padding: 5%;
+}
+
+
+
+.links-image
+{	opacity: 1;
+	display: block;
+	width: 100%;
+	height: auto;
+	transition: .5s ease;
+	backface-visibility: hidden;
+	padding: 2%;
+}
+
+.links-middle 
+{
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.links:hover .links-image 
+{
+  opacity: 0.3;
+}
+
+.links:hover .links-middle {
+  opacity: 1;
+}
+
+.links-text {
+  background-color: rgba(17,133,117, 0.9);
+  color: white;
+  font-size: 1em;
+  padding: 16px 32px;
+}
+
+.aps-responsive-links
+{
+	display: none;
+}
+
+
+
+/*Footer*/
+.footeraps
+{
+
+	/*background-image: url('../images/site/apslogo.png');*/
+	background-size: cover;
+	background-position: center;
+	min-height: 200px;
+	width: 100%;
+	background-color: black;
+	align-self: flex-end;
+
+}
+
+.footer-links
+{
+	padding-top:2%;
+	color: rgb(17,133,117);
+	text-align: center;
+	bottom: 0;
+
+	/*align-items: center;*/
+}
+
+
+
+
+/*Sección Acerca*/
+.about
+{
+	position: relative;
+	background-color: black;
+	display: block;
+	top: 0;
+	left: 0;
+
+}
+.links-about
+{
+	max-width: 100%;
+}
+
+.links-about a
+{
+	color: white;
+}
+
+.linkcenter
+{
+	font-size: 1.5em;
+	position: relative;
+	top: 0%;
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.esfera
+{
+	/*width: 100%;
+	height: auto;
+	backface-visibility: hidden;
+	padding: 10%;*/
+	-webkit-animation-name; resp:
+	-webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: .5s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-iteration-count: infinite;
+    animation-name: resp;
+    animation-duration: 2s;
+    animation-delay: .5s; 
+    animation-iteration-count: infinite;
+}
+
+.img-esfera
+{
+
+	/*display: block;
+	margin-left: auto;*/
+	width: 100%;
+	margin-right: auto;
+}
+
+@-webkik-keyframes resp
+{
+	0%   {drop-shadow(2px 2px 4px white);filter: drop-shadow(0px 0px 10px white);	}
+	50% {drop-shadow(8px 8px 10px white);filter: drop-shadow(0px 0px 15px white);	}
+	100% {drop-shadow(8px 8px 10px white);filter: drop-shadow(0px 0px 10px white);	}
+}
+
+@keyframes resp
+{
+	0%   {drop-shadow(2px 2px 4px white);filter: drop-shadow(0px 0px 10px white);	}
+	50% {drop-shadow(8px 8px 10px white);filter: drop-shadow(0px 0px 15px white);	}
+	100% {drop-shadow(8px 8px 10px white);filter: drop-shadow(0px 0px 10px white);	}
+}
+
+.aps-modal-about
+{
+	color: black;
+}
+
+/*Sección clientes*/
+.customers
+{
+	background-size: cover;
+}
+
+.aps-logos-customers
+{
+	padding: 50px;
+	display: inline-block;
+	align-self: center;
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	width: 100%;
+}
+
+/*Sección servicios*/
+.servicios h2
+{
+	color:white;
+	padding-top: 5%;
+	font-variant-caps: all-small-caps;
+}
+
+.servicios
+{
+	color:white;
+	font-style: normal;
+}
+
+.aps-txt-servicios
+{
+	padding-top: 1%;
+}
+
+/*Sección Crew*/
+.aps-img-crew
+{
+	max-width: 250px;
+	height: auto;
+	-webkit-filter: drop-shadow(8px 8px 15px rgb(0, 82, 138));filter: drop-shadow(8px 8px 15px rgb(0, 82, 138));
+}
+
+.aps-data
+{
+	padding-bottom: 2%;
+	padding-top: 3%;
+	 
+}
+
+.aps-modal-crew-txt
+{
+	color: black;
+}
+
+.aps-abstract
+{
+	padding-top: 3%;
+}
+
+/*Transicion crew*/
+
+.aps-container-crew {
+  position: relative;
+  width: 100%;
+}
+
+.aps-image-crew {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.aps-txt-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #008CBA;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.aps-container-crew:hover .aps-txt-overlay {
+  height: 100%;
+  background-color: red;
+}
+
+.aps-image-crew:hover
+{
+	-webkit-transition: width 2s; /* Safari */
+    transition: width 2s;
+}
+
+
+
+.aps-crew-text {
+  white-space: nowrap; 
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
+/*Sección proyectos*/
+
+.projects
+{
+	padding: 5%;
+}
+
+.proyecto
+{
+	padding: 5%;
+	color:white;
+}
+
+.aps-proy-cliente
+{
+	max-width: 150px;
+	height: auto;
+}
+
+.aps-carrousel-proy
+{
+	max-height: 600px;
+	width: auto;
+}
+
+.aps-pagination
+{
+	text-align: center;
+	padding: 2%;
+	position: absolute;
+	top: 50%;
+	left: 40%;
+	/*display: block;*/
+}
+
+/*Sección proyectos modales footer*/
+
+
+
+.aps-fade
+{
+	opacity: 1;
+  	display: block;
+  	width: 100%;
+  	height: auto;
+  	transition: .5s ease;
+  	backface-visibility: hidden;
+}
+
+.aps-fade-middle
+{
+	transition: .5s ease;
+  	opacity: 0;
+  	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	-ms-transform: translate(-50%, -50%);
+	text-align: center;  	
+
+}
+
+a:hover .aps-fade {
+  opacity: 0.3;
+}
+
+a:hover .aps-fade-middle {
+  opacity: 1;
+}
+
+.aps-fade-text {
+  /*background-color: #4CAF50;*/
+  color: white;
+  font-size: 16px;
+  left: 50%;
+  top: 50%;
+  /*padding: 1%;*/
+}
+
+
+/*navbar productos*/
+.aps-boton-tipo
+{
+	text-align: center;
+	color: white;
+}
+
+.aps-filtro-tipos
+{
+	text-align: center;
+}
+
+.dropdown-menu .dropdown-item 
+{
+	max-width: 25rem;
+}
+
+/*Sección Laboratorio*/
+
+.aps-lab-carrousel
+{
+	padding: 5%;
+}
+
+.aps-txt-lab
+{
+	color: white;
+}
+
+.txt-titulo
+{
+	text-align: center;
+	color: rgb(17, 133, 117);
+}
+
+
+/*Sección contacto*/
+
+.aps-contact-txt
+{
+	color: white;
+	padding: 3%;
+}
+
+.aps-canvas iframe
+{
+	height: 450px;
+	width: 100vw;
+	display: block;
+
+}
+
+.aps-txt-cto
+{
+	text-align: center;
+	align-items: center;
+}
+
+[class*=" bmd-label"], [class^=bmd-label]
+{
+	color:white;
+}
+
+.custom-file-control, .form-control
+{
+	/*color:rgb(214,242,244);*/
+	color:rgb(17,133,117);
+}
+
+.form-control:focus {
+    color: #fff;
+}
+
+.aps-icon-contact
+{
+	font-size: 3em;
+}
+
+.aps-contact
+{
+	padding-top: 3%;
+}
+
+.aps-tels-cto
+{
+	text-align: left;
+}
+
+@media screen and (max-width: 900px){
+ 
+.links
+{
+	display: none;
+
+}
+
+.aps-responsive-links
+{
+	display: block;
+	color:white;
+}
+
+
+.aps-home-txt
+	{
+		max-width: 150px;
+
+	}
+.drop
+	{
+		max-width: 120px;
+	}
+.video-aps
+{
+	position: relative;
+	width: auto;
+	height: 100%;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.footeraps
+{
+
+	height: 200px;
+}
+
+.footer-links
+{
+	font-size: 1.0em;
+}
+
+}
+
+
+
+
+
+@media (max-width:768px){
+
+.footeraps
+{
+	width: 100%;
+}
+
+.video-aps
+{
+	position: relative;
+	width: auto;
+	height: 500px;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.aps-home-txt
+	{
+		max-width: 300px;
+
+	}
+.drop
+	{
+		max-width: 200px;
+	}
+
+.navbar-home a
+{
+	font-size: 0.8em;
+	padding: 0%;
+}
+}
+
+@media (max-width:640px){
+.aps-home-txt
+	{
+		max-width: 200px;
+
+	}
+.drop
+	{
+		max-width: 100px;
+	}
+
+.navbar-home a
+{
+	font-size: 0.6em;
+	padding: 0%;
+}
+
+.slogan
+{
+	font-size: 1.5em;
+}
+
+.video-aps
+{
+	position: relative;
+	width: 100vw;
+	height: auto;
+	display: block;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.links
+{
+	display: none;
+
+}
+
+
+
+.footeraps
+{
+	height: 100px;
+	width: 100%;
+}
+
+.footer-links
+{
+	font-size: 0.9em;
+	padding-top: 1%;
+}
+
+}
+
+@media (max-width: 320px){
+.aps-home-txt
+{
+	max-width: 200px;
+
+}
+
+.footer-links
+{
+	font-size: 0.8em;
+}
+
+}
