@@ -72,7 +72,7 @@
 
                             <li><a <?php if ($name=='adminaps') {echo('class="nav-item active krieg-active"');}?>class="nav-link" href="{{ route ('adminaps') }}">{{ __('Panel') }}</a></li>
                              <li><a <?php if ($name=="adminusuarios") {echo('class="active krieg-active"');}?>class="nav-link" href="{{ route('adminusuarios') }}">{{ __('Usuarios') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('Registrar') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('registrar') }}">{{ __('Registrar') }}</a></li>
                              <li><a class="nav-link" href="{{ route('logout') }}" onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">{{ __('Salir') }}</a>{{ Auth::user()->name }}</li>
                     </ul>

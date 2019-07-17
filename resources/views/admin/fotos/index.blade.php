@@ -23,7 +23,7 @@
 				<div class="col-md-4">
 					<div class="panel panel-default">					
 						<div class="panel-body">
-								<img height="200px" width="300px"  src="/images/productos/{!! $foto->path_foto !!}" class="img-responsive">
+								<img height="200px" width="300px"  src="{!!asset('/images/productos/'.$foto->path_foto)  !!}" class="img-responsive">
 								<form onsubmit="return confirm('¿Estas seguro de eliminiar la fotografía?')" class="d-inline-block" method="post" action="{{route('adminfotos.destroy', $foto->id)}}">
 									<br>
 									@csrf

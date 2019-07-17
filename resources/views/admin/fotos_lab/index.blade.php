@@ -23,7 +23,7 @@
 				<div class="col-md-4">
 					<div class="card">					
 						<div class="card-body">
-								<img height="200px" width="300px"  src="/images/laboratorio/{!! $foto->path_foto !!}" class="img-responsive">
+								<img height="200px" width="300px"  src="{!! asset('/images/laboratorio/'.$foto->path_foto) !!}" class="img-responsive">
 								<form onsubmit="return confirm('¿Estas seguro de eliminiar la fotografía?')" class="d-inline-block" method="post" action="{{route('adminfotoslaboratorio.destroy', $foto->id)}}">
 									<br>
 									@csrf

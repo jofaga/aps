@@ -94,56 +94,45 @@
 	</div>
 </div>
 <!--links (Consultores, Taller, Laboratorio, Representaciones y Medio ambiente ) -->	
+</div>
 
-<div class="container-fluid links-background">
-		<div class="row justify-content-center">
-			<!-- Enlace 1 consultores-->
-			<div class="col-md-2 col-12">
-				<div class="links">
-					<img  class="links-image img-responsive" src="{!! asset('images/site/consultores.jpg')!!}">
-					<div class="links-middle">
-						<a class="links-text" target="_blank" href="http://consultores.aquaproductos.com/">Consultores</a>					
-					</div>
-				</div>			
-			</div>
-			<!-- Enlace 2 taller-->
-			<div class="col-md-2 col-12">
-				<div class="links">
-					<img  class=" links links-image img-responsive" src="{!! asset('images/site/taller.jpg')!!}">
-					<div class="links-middle">
-						<a class="links-text links-res" target="_blank" href="http://taller.aquaproductos.com/">Taller</a>						
-					</div>
-				</div>
-			</div>
-			<!-- Enlace 3 Laboratorio-->
-			<div class="col-md-2 col-12">
-				<div class="links">
-					<img  class=" links links-image img-responsive" src="{!! asset('images/site/laboratorio.jpg')!!}">
-					<div class="links-middle">
-						<a class="links-text" target="_blank" href="http://laboratorio.aquaproductos.com/">Laboratorio</a>					
-					</div>
-				</div>
-			</div>
-			<!-- Enlace 4 representaciones-->
-			<div class="col-md-2 col-12">
-				<div class="links">
-					<img  class=" links links-image img-responsive" src="{!! asset('images/site/representaciones.jpg')!!}">
-					<div class="links-middle">
-						<a class="links-text" target="_blank" href="http://www.aquaproductos.com/repre/">Representaciones</a>					
-					</div>
-				</div>
-			</div>
 
-			<!-- Enlace 5 medio ambiente-->
-			<div class="col-md-2 col-12">
-				<div class="links">
-					<img  class=" links links-image img-responsive" src="{!! asset('images/site/medio ambiente.jpg')!!}">
-					<div class="links-middle">
-						<a class="links-text" target="_blank" href="http://medioambiente.aquaproductos.com/">Medio</a>					
-					</div>
-				</div>
-			</div>
-		</div>
+
+<div class="flex-container">
+  <div class="spinner">
+    <p>
+    
+    <div class="cube1"></div>
+    <div class="cube2"></div>
+    Loading...
+    </p>
+  </div>
+  <div class="flex-slide home">
+    <div class="flex-title flex-title-home">Consultores</div>
+    <div class="flex-about flex-about-home">
+      <p>Click here to navigate to the home section of the website</p>
+    </div>
+  </div>
+  <div class="flex-slide about">
+    <div class="flex-title">Taller</div>
+    <div class="flex-about">
+      <p>Click here to navigate to the About section of the website</p>
+    </div>
+  </div>
+  <div class="flex-slide work">
+    <div class="flex-title">Laboratorio</div>
+    <div class="flex-about">
+      <p>Listing relevant snippets of work:</p>
+    </div>
+  </div>
+  <div class="flex-slide contact">
+    <div class="flex-title">Representaciones</div>
+    <div class="flex-about">
+      <p>Use the contact form below</p>
+      </form>
+    </div>
+  </div>
+</div>
 
 <!--links responsivos-->
 <div class="aps-responsive-links">
@@ -165,10 +154,50 @@
 		</div>
 </div>
 	
-</div>
 
 
 
+<script>
+(function(){
+		$('.flex-container').waitForImages(function() {
+			$('.spinner').fadeOut();
+	}, $.noop, true);
+	
+	$(".flex-slide").each(function(){
+		$(this).hover(function(){
+			$(this).find('.flex-title').css({
+				transform: 'rotate(0deg)',
+				top: '10%'
+			});
+			$(this).find('.flex-about').css({
+				opacity: '1'
+			});
+		}, function(){
+			$(this).find('.flex-title').css({
+				transform: 'rotate(90deg)',
+				top: '15%'
+			});
+			$(this).find('.flex-about').css({
+				opacity: '0'
+			});
+		})
+	});
+})();
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 
 @endsection

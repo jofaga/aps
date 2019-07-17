@@ -31,7 +31,7 @@
 
 		<div class="admin form-group">
 			<h1>Logo del cliente</h1>	
-			<img height="300px" width="300px" src="/images/logos_clientes/{{ $cliente->logo}}" class="img-responsive">	
+			<img height="300px" width="300px" src="{{ asset('/images/logos_clientes/'.$cliente->logo)}}" class="img-responsive">	
 		</div>		
 
 		<div class="form-group">

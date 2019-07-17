@@ -78,11 +78,11 @@ class ApsController extends Controller
 
     }  
 
-    public function test($id)
-    {
-         $socials    = social::orderBy('id', 'desc')->get();
-        return view('site.test', compact('socials'));
-    }
+    // public function test($id)
+    // {
+    //      $socials    = social::orderBy('id', 'desc')->get();
+    //     return view('site.test', compact('socials'));
+    // }
 
     public function project($id)
     {   
@@ -169,6 +169,12 @@ class ApsController extends Controller
     {
         Mail::to('pruebas@kriegsoft.com')->send(new Contact($request));
         return redirect()->back();
+    }
+
+    public function test()
+    {
+        $socials    = social::orderBy('id', 'desc')->get();
+        return view('site.test', compact('socials'));
     }
 
 }

@@ -37,7 +37,7 @@
 
 		<div class="admin form-group">
 			<h1>Foto del servicio</h1>	
-			<img height="300px" width="300px" src="/images/servicios/{{ $servicio->foto}}" class="img-responsive">	
+			<img height="300px" width="300px" src="{{asset('/images/servicios/'.$servicio->foto) }}" class="img-responsive">	
 		</div>		
 
 		<div class="form-group">
