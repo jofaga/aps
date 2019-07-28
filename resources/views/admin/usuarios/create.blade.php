@@ -24,12 +24,14 @@
 			{!!Form::label('cargo', 'Cargo del Usuario:')!!}
 			{!!Form::text('cargo', null, ['class'=> 'form-control', 'placeholder'=>'Introduce el cargo del Usuario', 'required'])!!}
 		</div>
-		<div class="form-group">
+		<!-- <input type="text" name="descipcion" /> -->
+		<input type="hidden" name="descripcion" id="descripcion" value="TBD" />	
+		<!-- <div class="form-group">
 			{!! Form::label('descripcion', 'Resumen del Usuario:') !!}
 			<div class="trumbowyg-background">
-				{!! Form::textarea('descripcion', null, ['class'=> 'form-control textarea-content', 'placeholder'=>'Introduce el resumen del Usuario']) !!}
+				{!! Form::textarea('descripcion', null, ['class'=> 'form-control textarea-content', 'placeholder'=>'Introduce el resumen del Usuario', 'value'=>'TBD']) !!}
 			</div>
-		</div>
+		</div> -->
 		
 		<div class="form-group">
 			{!! Form::submit('Agregar', ['class' => 'btn btn-primary form-control']) !!}

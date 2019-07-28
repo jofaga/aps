@@ -82,11 +82,11 @@
 					      {{--   	<div class="col-12">
 					        		
 					        	</div> --}}
-					        	<div class="col-12">
+					        	<!-- <div class="col-12">
 					        		<div class="aps-abstract">
 					        			{!!$member->descripcion!!}
 					        		</div>
-					        	</div>
+					        	</div> -->
 					        </div>
 					        
 					      </div>
