@@ -57,7 +57,7 @@ class ApsController extends Controller
     public function crew()
     {
      $socials = social::orderBy('id', 'desc')->get();
-     $members = usuarios::orderBy('id', 'desc')->paginate(9);
+     $members = usuarios::orderBy('id', 'asc')->paginate(9);
      $members->each(function($members){
         $members->fotos_usuario;
      });
