@@ -161,7 +161,7 @@ class ApsController extends Controller
     public function customers()
     {
         $socials = social::orderBy('id', 'desc')->get();
-        $customers = clientes::orderBy('id','desc')->paginate(6);
+        $customers = clientes::orderBy('id','desc')->get();
         return view('site.customers', compact('socials', 'customers'));
     }
 
